@@ -1,0 +1,49 @@
+============================================================
+WIN RATE DRIVER ANALYSIS – Actionable Summary
+============================================================
+
+Overall win rate (baseline): 45.3%
+
+--- Top factors associated with WIN (positive drivers) ---
+  amount_band: coefficient 0.006
+  industry: coefficient 0.002
+
+--- Top factors associated with LOSS (negative drivers) ---
+  deal_stage: coefficient -0.047
+  cycle_band: coefficient -0.047
+  lead_source: coefficient -0.039
+  product_type: coefficient -0.017
+  region: coefficient -0.016
+
+--- Segment lift vs baseline (lift = segment_win_rate - baseline, in pp) ---
+Segments with largest NEGATIVE lift (hurting win rate):
+       dimension        segment  wins  total  win_rate      lift
+20    deal_stage      Qualified   404    956  0.422594 -3.000586
+14   lead_source        Partner   545   1240  0.439516 -1.308387
+5       industry         EdTech   438    992  0.441532 -1.106774
+7       industry     HealthTech   450   1010  0.445545 -0.705545
+19    deal_stage       Proposal   451   1009  0.446977 -0.562279
+3         region  North America   555   1239  0.447942 -0.465811
+4       industry      Ecommerce   476   1060  0.449057 -0.354340
+0         region           APAC   558   1242  0.449275 -0.332464
+10  product_type     Enterprise   733   1630  0.449693 -0.290675
+8       industry           SaaS   452   1001  0.451548 -0.105155
+
+Segments with largest POSITIVE lift (helping win rate):
+       dimension      segment  wins  total  win_rate      lift
+6       industry      FinTech   447    937  0.477054  2.445443
+16    deal_stage       Closed   466    997  0.467402  1.480221
+18    deal_stage  Negotiation   464    995  0.466332  1.373166
+12   lead_source      Inbound   581   1262  0.460380  0.778035
+17    deal_stage         Demo   478   1043  0.458293  0.569338
+2         region        India   588   1286  0.457232  0.463173
+1         region       Europe   562   1233  0.455799  0.319886
+15   lead_source     Referral   570   1252  0.455272  0.267157
+9   product_type         Core   771   1694  0.455136  0.253577
+13   lead_source     Outbound   567   1246  0.455056  0.245618
+
+--- How a sales leader would use this ---
+1. Focus on segments with largest negative lift: coaching, playbooks, or qualification.
+2. Double down on segments with positive lift: replicate what works (source, product, region).
+3. Use coefficient signs to prioritize: fix negative drivers before scaling positive ones.
+4. Re-run monthly/quarterly to track whether interventions improve segment win rates.
