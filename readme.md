@@ -6,11 +6,10 @@ A data-driven insight system to help a CRO understand why win rate has dropped a
 
 ## Approach
 
-- **Problem framing**: The real issue is *diagnostic blindness*—knowing *where* and *why* win rate is breaking down so the team can act. The solution frames key questions, metrics, and assumptions in [PROBLEM_FRAMING.md](PROBLEM_FRAMING.md).
+- **Problem framing**: The real issue is *diagnostic blindness*—knowing *where* and *why* win rate is breaking down so the team can act. The solution frames key questions, metrics, and assumptions .
 - **EDA & insights**: Python EDA on `skygeni_sales_data.csv` surfaces three business insights (win rate by region/quarter, lead source & product impact, sales cycle vs outcome) and two custom metrics: **Pipeline Quality Score (PQS)** and **Cycle Win Efficiency (CWE)**. See [eda_insights.py](eda_insights.py).
 - **Decision engine**: **Win Rate Driver Analysis** (Option B). A simple logistic model plus segment lift tables identify which factors hurt or help win rate and produce an actionable report and CSVs. See [decision_engine.py](decision_engine.py).
-- **System design**: A lightweight Sales Insight & Alert System is outlined in [SYSTEM_DESIGN.md](SYSTEM_DESIGN.md)—architecture, data flow, example alerts, run frequency, and failure cases.
-- **Reflection**: Assumptions, production risks, next steps, and least-confident parts are in [REFLECTION.md](REFLECTION.md).
+- **Reflection**: Assumptions, production risks, next steps, and least-confident parts are in .
 
 ---
 
@@ -69,15 +68,12 @@ python decision_engine.py
 
 ```
 cache/sales_intelligence/
-├── README.md                 # This file
-├── problem_statement.txt     # Challenge brief
+├── README.md                 # This file   
 ├── skygeni_sales_data.csv   # Input data
-├── requirements.txt
-├── PROBLEM_FRAMING.md       # Part 1
+├── requirements.txt      # Part 1
 ├── eda_insights.py          # Part 2 – EDA, insights, PQS, CWE
 ├── decision_engine.py       # Part 3 – Win rate driver analysis
 ├── SYSTEM_DESIGN.md         # Part 4
-├── REFLECTION.md            # Part 5
 └── outputs/                 # Created on run: CSVs, report, optional plots
 ```
 
